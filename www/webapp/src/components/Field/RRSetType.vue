@@ -77,6 +77,7 @@ export default {
     input(event) {
       this.$emit('update:modelValue', event);
       this.$emit('input', event);
+      this.$emit('dirty');
     },
   },
 };
